@@ -1,0 +1,70 @@
+body {
+    font-family: monospace;
+    position: relative;
+    text-align: center;
+}
+
+#titleDiv {
+    font-family: monospace;
+}
+
+#displayDiv {
+    /* position: relative;
+    display: inline-block; */
+    /* margin-top: 20px; */
+    height: 50px;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid black; */
+}
+
+#display {
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+#opKeys {
+    margin-bottom: 20px;
+}
+
+.function {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: lightpink;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#numKeys {
+    margin-bottom: 25px;
+}
+
+.keys {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed black;
+}
+
+#funKeys {
+    margin-top: 20px;
+    padding: 2px;
+    margin: 0px;
+}
+
+.function {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    padding: 5px;
+    background-color: lightpink;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#footer {
+    font-family: monospace;
+    overflow: auto;
+    margin-top: 20px;
+    font-size: .9em;
+}
