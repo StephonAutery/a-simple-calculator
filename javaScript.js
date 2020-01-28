@@ -10,6 +10,8 @@ function makeNum(event){
         secondNumb = parseInt(secondNumb + number);
         gotSecond = true;
     } else {
+        console.log(number + "  number");
+        console.log(parseInt(firstNumb + number) + "  firstNumb - parsed");
         firstNumb = parseInt(firstNumb + number);
     }
 }
@@ -28,8 +30,8 @@ function displayClear(){
 
 // get the operator
 function getOperator(event){
-    console.log(gotFirst);
     console.log(gotOperator);
+    console.log(firstNumb);
     if (gotOperator === false && firstNumb != ""){
         operator = event.target.textContent;
         display.appendChild(document.createTextNode(" "));
@@ -83,23 +85,23 @@ varClear = document.getElementById("clear");
 varClear.addEventListener('click', displayClear, false);
 
 // build the number buttons
-for (i = 1; i <= 9; i++){
+for (i = 1; i <= 10; i++){
     varKey = document.getElementById("key" + i);
     varKey.addEventListener('click', makeNum, false);
 }
 
-//build the zero button
-varKey = document.getElementById("zero");
-varKey.addEventListener('click', makeNum, false);
+// //build the zero button
+// varKey = document.getElementById("zero");
+// varKey.addEventListener('click', makeNum, false);
 
 // build the operator buttons
-varAdd = document.getElementById("key10");
+varAdd = document.getElementById("key11");
 varAdd.addEventListener('click', getOperator, false);
-varSub = document.getElementById("key11");
+varSub = document.getElementById("key12");
 varSub.addEventListener('click', getOperator, false);
-varMult = document.getElementById("key12");
+varMult = document.getElementById("key13");
 varMult.addEventListener('click', getOperator, false);
-varDiv = document.getElementById("key13");
+varDiv = document.getElementById("key14");
 varDiv.addEventListener('click', getOperator, false);
 
 // evaluate the equation
