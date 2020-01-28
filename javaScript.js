@@ -7,12 +7,12 @@ function makeNum(event){
     display.appendChild(document.createTextNode(event.target.textContent));
     var number = event.target.textContent;
     if (gotFirst){
-        secondNumb = parseInt(secondNumb + number);
+        secondNumb = parseFloat(secondNumb + number);
         gotSecond = true;
     } else {
         console.log(number + "  number");
-        console.log(parseInt(firstNumb + number) + "  firstNumb - parsed");
-        firstNumb = parseInt(firstNumb + number);
+        console.log(parseFloat(firstNumb + number) + "  firstNumb - parsed");
+        firstNumb = parseFloat(firstNumb + number);
     }
 }
 
