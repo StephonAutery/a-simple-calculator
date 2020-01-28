@@ -88,6 +88,10 @@ for (i = 1; i <= 9; i++){
     varKey.addEventListener('click', makeNum, false);
 }
 
+//build the zero button
+varKey = document.getElementById("zero");
+varKey.addEventListener('click', makeNum, false);
+
 // build the operator buttons
 varAdd = document.getElementById("key10");
 varAdd.addEventListener('click', getOperator, false);
