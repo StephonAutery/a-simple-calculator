@@ -10,9 +10,7 @@ function makeNum(event){
         secondNumb = parseFloat(secondNumb + number);
         gotSecond = true;
     } else {
-        console.log(number + "  number");
-        console.log(parseFloat(firstNumb + number) + "  firstNumb - parsed");
-        firstNumb = parseFloat(firstNumb + number);
+firstNumb = parseFloat(firstNumb + number);
     }
 }
 
@@ -30,8 +28,6 @@ function displayClear(){
 
 // get the operator
 function getOperator(event){
-    console.log(gotOperator);
-    console.log(firstNumb);
     if (gotOperator === false && firstNumb != ""){
         operator = event.target.textContent;
         display.appendChild(document.createTextNode(" "));
